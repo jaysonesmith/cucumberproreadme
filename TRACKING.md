@@ -1,6 +1,6 @@
 # Tracking
 
-This doc with document the project's settings and coordinating Cucumber Pro behavior.
+This doc with document the project's settings and coordinating Cucumber Pro behavior. There is an assets directory that contains the screenshots used in this file that I have removed from the directory structures below.
 
 ## #1 - Basic, no features
 
@@ -10,7 +10,6 @@ This doc with document the project's settings and coordinating Cucumber Pro beha
 
 ```
 .
-├── assets
 ├── features
 ├── README.md
 └── TRACKING.md
@@ -26,8 +25,6 @@ This doc with document the project's settings and coordinating Cucumber Pro beha
 
 ```
 .
-├── assets
-│  └── 1.png
 ├── features
 │  └── test.feature
 ├── README.md
@@ -44,9 +41,6 @@ This doc with document the project's settings and coordinating Cucumber Pro beha
 
 ```
 .
-├── assets
-│  ├── 1.png
-│  └── 2.png
 ├── features
 │  ├── README.md
 │  └── test.feature
@@ -68,11 +62,6 @@ Note that the table of contents does not reflect that the directory exists.
 
 ```
 .
-├── assets
-│  ├── 1.png
-│  ├── 2.png
-│  ├── 3.png
-│  └── 4.png
 ├── features
 │  ├── README.md
 │  └── test_directory_1
@@ -93,11 +82,6 @@ This example is one that follows Pro's recommendation of putting a readme in the
 
 ```
 .
-├── assets
-│  ├── 1.png
-│  ├── 2.png
-│  ├── 3.png
-│  └── 4.png
 ├── features
 │  ├── README.md
 │  └── test_directory_1
@@ -118,12 +102,6 @@ No change
 
 ```
 .
-├── assets
-│  ├── 1.png
-│  ├── 2.png
-│  ├── 3.png
-│  ├── 4.png
-│  └── 5.png
 ├── features
 │  ├── README.md
 │  ├── test_directory_1
@@ -138,3 +116,26 @@ No change
 ### Cucumber Pro Output
 
 ![6](./assets/6.png)
+
+## #7 - Two features nested in their own directories
+
+This example is where we get what is more along the lines of what I would consider the standard/idiomatic Cucumber Pro setup. Pro is correctly showing the landing page as well as the directories in the table of contents.
+
+### Project Structure
+
+```
+.
+├── features
+│  ├── README.md
+│  ├── test_directory_1
+│  │  ├── README.md
+│  │  └── test.feature
+│  └── test_directory_2
+│     └── test_2.feature
+├── README.md
+└── TRACKING.md
+```
+
+### Cucumber Pro Output
+
+![7](./assets/7.png)
