@@ -109,3 +109,32 @@ This example is one that follows Pro's recommendation of putting a readme in the
 ### Cucumber Pro Output
 
 ![5](./assets/5.png)
+
+## #6 - Add new nested directory, but only add .gitkeep
+
+No change
+
+### Project Structure
+
+```
+.
+├── assets
+│  ├── 1.png
+│  ├── 2.png
+│  ├── 3.png
+│  ├── 4.png
+│  └── 5.png
+├── features
+│  ├── README.md
+│  ├── test_directory_1
+│  │  ├── README.md
+│  │  └── test.feature
+│  └── test_directory_2
+│     └── .gitkeep
+├── README.md
+└── TRACKING.md
+```
+
+### Cucumber Pro Output
+
+![6](./assets/6.png)
