@@ -58,9 +58,11 @@ This doc with document the project's settings and coordinating Cucumber Pro beha
 
 ![3](./assets/3.png)
 
-## #3 - Nest feature under /features/test_directory_1 with README still under /features
+## #4 - Nest feature under /features/test_directory_1 with README still under /features
 
-This example is one in which I could see someone (like myself) setting up a project's landing page under /features and deciding to group features into directories for organization, especially with Pro's table of contents.
+This example is one in which I could see someone (like myself) setting up a project's landing page under /features and deciding to group features into directories for organization, especially with Pro's table of contents. 
+
+Note that the table of contents does not reflect that the directory exists.
 
 ### Project Structure
 
@@ -82,3 +84,28 @@ This example is one in which I could see someone (like myself) setting up a proj
 ### Cucumber Pro Output
 
 ![4](./assets/4.png)
+
+## #5 - Add nested readme to above project
+
+This example is one that follows Pro's recommendation of putting a readme in the same nested directory as the feature. It unfortunately then ignores the landing page readme. The table of contents still does not show the directory that the feature is in.
+
+### Project Structure
+
+```
+.
+├── assets
+│  ├── 1.png
+│  ├── 2.png
+│  ├── 3.png
+│  └── 4.png
+├── features
+│  ├── README.md
+│  └── test_directory_1
+│     └── test.feature
+├── README.md
+└── TRACKING.md
+```
+
+### Cucumber Pro Output
+
+![5](./assets/5.png)
